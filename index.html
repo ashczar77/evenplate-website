@@ -1,64 +1,330 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#171d1a">
-  <meta name="description" content="EvenPlate helps you explore what makes a meal satisfying. Scan a plate, try thoughtful changes, and learn from how you feel, without counting calories.">
+  <meta name="theme-color" content="#161917" id="theme-color-meta">
+  <meta name="description" content="EvenPlate brings calories, macros, micronutrients, satiety coaching, free barcode and text food lookup, fridge-to-recipe cooking, and smart meal planning together in Light Botanical and Matte Charcoal themes.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="EvenPlate | Make room for fuller living">
-  <meta property="og:description" content="A calmer way to explore food and fullness. Scan, build, and learn from every plate.">
-  <meta property="og:image" content="https://evenplateapp.xyz/media/evenplate-mark.png">
+  <meta property="og:title" content="EvenPlate | Smart Nutrition, Satiety &amp; Kitchen Studio">
+  <meta property="og:description" content="Scan plates and fridges, search food and barcodes free forever, cook with guided timers, and track macros and micronutrients in Light or Dark mode.">
+  <meta property="og:image" content="https://evenplateapp.xyz/media/evenplate-mark-dark.png">
   <link rel="canonical" href="https://evenplateapp.xyz/">
-  <link rel="icon" type="image/png" href="/media/evenplate-mark.png">
+  <link rel="icon" type="image/png" href="/media/evenplate-mark-dark.png">
   <link rel="stylesheet" href="/home.css">
-  <title>EvenPlate | Make room for fuller living</title>
+  <script defer src="/site.js"></script>
+  <title>EvenPlate | Smart Nutrition, Satiety &amp; Kitchen Studio</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="/" aria-label="EvenPlate home"><img src="/media/evenplate-mark.png" alt="" width="42" height="42"><span>EvenPlate<span class="brand-dot">.</span></span></a>
-      <nav class="header-nav" aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#inside-the-app">Inside the app</a><a class="nav-contact" href="mailto:evenplatesupport@gmail.com">Get in touch <span aria-hidden="true">&#8599;</span></a></nav>
+      <a class="brand" href="/" aria-label="EvenPlate home">
+        <span class="brand-emblem" aria-hidden="true">
+          <img class="brand-img-dark" src="/media/evenplate-mark-dark.png" alt="" width="40" height="40">
+          <img class="brand-img-light" src="/media/evenplate-mark-light.png" alt="" width="40" height="40">
+        </span>
+        <span class="brand-word">Even<span class="brand-accent">Plate</span></span>
+      </a>
+
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#themes">Themes</a>
+        <a href="#workflow">Inside the App</a>
+        <a href="#plans">Free vs. Pro</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="theme-switch" role="group" aria-label="Site color theme">
+          <button type="button" class="theme-btn" data-set-theme="light" aria-pressed="false">Light</button>
+          <button type="button" class="theme-btn is-active" data-set-theme="dark" aria-pressed="true">Dark</button>
+        </div>
+        <a class="nav-cta" href="mailto:evenplatesupport@gmail.com">Get in touch</a>
+      </div>
     </div>
   </header>
+
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> A more thoughtful way to eat</p>
-          <h1 id="hero-title">Make room for <em>fuller</em> living.</h1>
-          <p class="hero-intro">No calorie math. No perfect plates. Just a clearer view of what is on your plate and how it might help you feel satisfied.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#how-it-works">Discover EvenPlate <span aria-hidden="true">&#8594;</span></a><a class="button button-quiet" href="#inside-the-app">Take a look inside <span aria-hidden="true">&#8595;</span></a></div>
-          <p class="hero-note">Food guidance built for curiosity, not counting.</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> EvenPlate 2.0 &middot; Nutrition &amp; Kitchen Coach</p>
+          <h1 id="hero-title">Eat with clarity.<br><span class="headline-accent">Stay steady all day.</span></h1>
+          <p class="hero-intro">
+            Combine calorie and macro balance, satiety coaching, free barcode and text lookup, fridge-to-recipe cooking, and weekly meal planning in one calm app.
+          </p>
+
+          <div class="hero-pills" aria-label="Core capabilities">
+            <span class="pill"><span class="pill-dot dot-produce"></span> Free Text &amp; Barcode Search</span>
+            <span class="pill"><span class="pill-dot dot-protein"></span> Macro Liquid Cylinders</span>
+            <span class="pill"><span class="pill-dot dot-carbs"></span> Guided Recipe Timers</span>
+            <span class="pill"><span class="pill-dot dot-fat"></span> Light &amp; Dark Themes</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#features">Explore new features <span aria-hidden="true">&#8594;</span></a>
+            <a class="button button-secondary" href="#themes">Compare both themes <span aria-hidden="true">&#8595;</span></a>
+          </div>
+          <p class="hero-note">Private by design: AES-256 on-device storage, stripped EXIF photo metadata, and zero cross-app tracking.</p>
         </div>
-        <div class="hero-art">
-          <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
-          <div class="phone phone-back" aria-hidden="true"><img src="/media/daily-harmony.jpg" alt="" width="647" height="1400"></div>
-          <div class="phone phone-front"><img src="/media/meal-analysis.jpg" alt="EvenPlate meal analysis showing a salmon plate, a relative fullness estimate, and ideas for the plate" width="647" height="1400" fetchpriority="high"></div>
-          <div class="floating-note" aria-hidden="true"><span class="note-spark">&#10022;</span><span>Small changes.<br><strong>More satisfying meals.</strong></span></div>
+
+        <div class="hero-stage" aria-label="EvenPlate app previews in Light and Dark themes">
+          <div class="stage-ring" aria-hidden="true"></div>
+          <div class="device-frame device-back">
+            <img src="/media/today-dark.jpg" alt="EvenPlate Daily Nutrition screen in Matte Charcoal Dark mode" width="600" height="1304">
+          </div>
+          <div class="device-frame device-front">
+            <img src="/media/today-light.jpg" alt="EvenPlate Daily Nutrition screen with calorie meter and liquid macro cylinders in Light Botanical mode" width="600" height="1304" fetchpriority="high">
+          </div>
+          <div class="floating-chip chip-top" aria-hidden="true">
+            <span class="chip-label">COACH PICK</span>
+            <strong>Satiety 88/100 &middot; High Protein</strong>
+          </div>
+          <div class="floating-chip chip-bottom" aria-hidden="true">
+            <span class="chip-label">FOOD LOOKUP</span>
+            <strong>Always free: Text &amp; Barcode</strong>
+          </div>
         </div>
       </div>
-      <div class="hero-bottom shell"><span>SEE FOOD DIFFERENTLY</span><span class="hero-bottom-rule"></span><span>SCROLL TO EXPLORE</span></div>
     </section>
-    <section class="intro-section" id="how-it-works" aria-labelledby="intro-title">
+
+    <section class="bento-section" id="features" aria-labelledby="features-title">
       <div class="shell">
-        <div class="section-heading"><p class="eyebrow dark-eyebrow">THE IDEA</p><h2 id="intro-title">A better question than <em>"How many calories?"</em></h2><p>EvenPlate helps you look at a meal through protein, fiber, fat, and volume, then reflect on your own experience. A practical starting point for building plates that feel good to you.</p></div>
-        <div class="feature-grid">
-          <article class="feature-card"><span class="feature-number">01 / NOTICE</span><div class="feature-icon" aria-hidden="true">&#9783;</div><h3>Scan what is there.</h3><p>Photograph a meal to see a relative fullness estimate, a plain-language explanation, and ideas for what you could add.</p></article>
-          <article class="feature-card"><span class="feature-number">02 / EXPLORE</span><div class="feature-icon" aria-hidden="true">&#10010;</div><h3>Build what is next.</h3><p>Choose foods or describe your own. Try a different combination and assess the whole plate before you save it.</p></article>
-          <article class="feature-card"><span class="feature-number">03 / LEARN</span><div class="feature-icon" aria-hidden="true">&#9679;</div><h3>Find your rhythm.</h3><p>Keep a meal diary, check in with your energy, and notice patterns over time without turning eating into a spreadsheet.</p></article>
+        <div class="section-header">
+          <p class="eyebrow">WHAT IS NEW</p>
+          <h2 id="features-title">Built for real kitchens, <span class="headline-accent">not spreadsheet fatigue.</span></h2>
+          <p>From scanning leftovers in your fridge to checking your potassium and fiber before dinner, every workflow fits cleanly in one place.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-wide">
+            <div class="bento-meta">01 / COMPLETE PLATE CLARITY</div>
+            <h3>Calories, liquid macro cylinders, and a 0-100 Satiety score</h3>
+            <p>Track daily calorie pacing alongside Protein, Carbs, Fats, and Dietary Fiber. Each scanned or logged plate shows a plain-language fullness explanation plus interactive "What if I add...?" nutrition previews before you save.</p>
+            <div class="macro-strip" aria-hidden="true">
+              <div class="macro-chip macro-p"><span class="macro-tag">Protein</span><strong>36g</strong></div>
+              <div class="macro-chip macro-c"><span class="macro-tag">Carbs</span><strong>48g</strong></div>
+              <div class="macro-chip macro-f"><span class="macro-tag">Fats</span><strong>18g</strong></div>
+              <div class="macro-chip macro-v"><span class="macro-tag">Fiber</span><strong>11g</strong></div>
+            </div>
+          </article>
+
+          <article class="bento-card">
+            <div class="bento-meta">02 / ZERO PAYWALL SEARCH</div>
+            <h3>Free Text &amp; Barcode Lookup</h3>
+            <p>Search foods freely by name or scan packaged barcodes with instant nutrition lookup powered by USDA FoodData Central, Open Food Facts, and curated regional staples.</p>
+            <span class="card-badge">Unlimited on Free &amp; Pro</span>
+          </article>
+
+          <article class="bento-card">
+            <div class="bento-meta">03 / KITCHEN ENGINE</div>
+            <h3>Fridge Scan to Recipe Studio</h3>
+            <p>Snap ingredients in your fridge or pantry (up to 4 photos on Pro) to unlock tailored Chef Recipes, a bold Coach Pick card matched to your remaining macros, and step-by-step Guided Cook Mode with built-in timers and audio chimes.</p>
+          </article>
+
+          <article class="bento-card">
+            <div class="bento-meta">04 / SMART PLANNER</div>
+            <h3>1-Day &amp; 7-Day Meal Plans + Grocery Checklist</h3>
+            <p>Generate balanced plans tuned to your goal lens, meal cadence, and dietary style. Missing ingredients flow directly into an interactive Grocery Gaps checklist that groups and auto-collapses by aisle as you shop.</p>
+          </article>
+
+          <article class="bento-card bento-wide">
+            <div class="bento-meta">05 / COACH INSIGHTS &amp; MICRONUTRIENTS</div>
+            <h3>Spot patterns across a 30-day rolling diary</h3>
+            <p>Compare daily calorie targets, macro splits, Steady vs. Dip post-meal energy check-ins, and micronutrient coverage (Fiber, Vitamin C, Iron, Potassium, Sodium) with an actionable Coach Weekly Digest.</p>
+            <div class="goal-pills" aria-hidden="true">
+              <span>Lean Out</span>
+              <span>Build Muscle</span>
+              <span>Steady Energy</span>
+              <span>Cut Cravings</span>
+              <span>Balance</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <section class="showcase-section" id="inside-the-app" aria-labelledby="showcase-title">
-      <div class="shell showcase-grid">
-        <div class="showcase-copy"><p class="eyebrow">THE APP, UP CLOSE</p><h2 id="showcase-title">Designed for real life, <em>one plate at a time.</em></h2><p>Start with a photo or build a meal yourself. Explore a complete-plate assessment, save what matters, and come back to what you learned.</p><div class="showcase-point"><span aria-hidden="true">&#10003;</span><span>One understandable relative score, with context</span></div><div class="showcase-point"><span aria-hidden="true">&#10003;</span><span>Changes assessed as a whole meal</span></div><div class="showcase-point"><span aria-hidden="true">&#10003;</span><span>Privacy and consent built into the experience</span></div></div>
-        <div class="showcase-panel"><div class="panel-header"><span class="panel-dot"></span> A plate you can make your own <span class="panel-index">EVENPLATE / 02</span></div><div class="showcase-phones"><div class="phone showcase-phone"><img src="/media/build-a-plate.jpg" alt="EvenPlate screen for building a plate from foods" width="647" height="1400" loading="lazy"></div><div class="phone showcase-phone secondary-phone"><img src="/media/daily-harmony.jpg" alt="EvenPlate daily diary and energy check-in screen" width="647" height="1400" loading="lazy"></div></div></div>
+
+    <section class="themes-section" id="themes" aria-labelledby="themes-title">
+      <div class="shell">
+        <div class="section-header centered">
+          <p class="eyebrow">TWO FIRST-CLASS THEMES</p>
+          <h2 id="themes-title">Daylight Botanical meets <span class="headline-accent">Matte Charcoal.</span></h2>
+          <p>Switch cleanly between System, Light, and Dark appearance inside Settings. Cards, glass meters, dish sketches, and app icons adapt seamlessly.</p>
+        </div>
+
+        <div class="theme-compare-grid">
+          <article class="theme-showcase-card showcase-light">
+            <div class="showcase-head">
+              <img src="/media/evenplate-mark-light.png" alt="EvenPlate Light theme icon" width="52" height="52">
+              <div>
+                <span class="theme-tag">LIGHT THEME</span>
+                <h3>Botanical Daylight</h3>
+              </div>
+              <div class="swatch-row" aria-label="Light theme colors">
+                <span style="background:#E2EDE5" title="#E2EDE5 Canvas"></span>
+                <span style="background:#FFFFFF" title="#FFFFFF Card"></span>
+                <span style="background:#2B7A4B" title="#2B7A4B Botanical Green"></span>
+                <span style="background:#DE553B" title="#DE553B Terracotta"></span>
+              </div>
+            </div>
+            <p>Soft sage canvas (<code>#E2EDE5</code>), crisp white surfaces, and forest pine typography designed for bright mornings and kitchen prep.</p>
+            <div class="showcase-device-wrap">
+              <div class="device-frame">
+                <img src="/media/today-light.jpg" alt="EvenPlate Light Botanical Today screen" width="600" height="1304" loading="lazy">
+              </div>
+              <div class="device-frame secondary">
+                <img src="/media/planner-light.jpg" alt="EvenPlate Light Botanical Planner and Grocery Checklist screen" width="600" height="1304" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <article class="theme-showcase-card showcase-dark">
+            <div class="showcase-head">
+              <img src="/media/evenplate-mark-dark.png" alt="EvenPlate Dark theme icon" width="52" height="52">
+              <div>
+                <span class="theme-tag">DARK THEME</span>
+                <h3>Matte Charcoal &amp; Mint</h3>
+              </div>
+              <div class="swatch-row" aria-label="Dark theme colors">
+                <span style="background:#161917" title="#161917 Canvas"></span>
+                <span style="background:#202421" title="#202421 Card"></span>
+                <span style="background:#86D5A8" title="#86D5A8 Mint Accent"></span>
+                <span style="background:#EF7A64" title="#EF7A64 Coral"></span>
+              </div>
+            </div>
+            <p>Deep charcoal canvas (<code>#161917</code>), elevated slate cards, and crisp mint accents tuned for low-glare evening planning and cooking.</p>
+            <div class="showcase-device-wrap">
+              <div class="device-frame">
+                <img src="/media/today-dark.jpg" alt="EvenPlate Matte Charcoal Today screen" width="600" height="1304" loading="lazy">
+              </div>
+              <div class="device-frame secondary">
+                <img src="/media/studio-dark.jpg" alt="EvenPlate Matte Charcoal Recipe Studio screen" width="600" height="1304" loading="lazy">
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
-    <section class="principle-section" aria-labelledby="principle-title"><div class="shell principle-grid"><div class="principle-mark"><img src="/media/evenplate-mark.png" alt="" width="140" height="140" loading="lazy"></div><div><p class="eyebrow dark-eyebrow">THE EVENPLATE PRINCIPLE</p><h2 id="principle-title">Food is more than a number.</h2><p>EvenPlate offers educational estimates, not measured nutrition facts or medical advice. Your appetite, body, and circumstances matter. Use the app as a prompt to pay attention, not a rulebook.</p></div></div></section>
+
+    <section class="gallery-section" id="workflow" aria-labelledby="workflow-title">
+      <div class="shell">
+        <div class="section-header">
+          <p class="eyebrow">INSIDE THE APP</p>
+          <h2 id="workflow-title">Every screen works <span class="headline-accent">in one continuous loop.</span></h2>
+          <p>Scan what you have, build what is missing, cook with guided timers, and review real patterns over time.</p>
+        </div>
+
+        <div class="screen-strip">
+          <figure class="screen-item">
+            <div class="device-frame"><img src="/media/today-light.jpg" alt="Daily Nutrition card with calorie meter and macro cylinders" width="600" height="1304" loading="lazy"></div>
+            <figcaption>
+              <strong>Today &amp; Macro Cylinders</strong>
+              <span>Live calorie runway, liquid macro gauges, and quick kitchen shortcuts.</span>
+            </figcaption>
+          </figure>
+          <figure class="screen-item">
+            <div class="device-frame"><img src="/media/studio-dark.jpg" alt="Recipe Studio with highlighted Coach Pick card" width="600" height="1304" loading="lazy"></div>
+            <figcaption>
+              <strong>Recipe Studio &amp; Timers</strong>
+              <span>Highlighted Coach Pick rationale plus Guided Cook Mode with 00:00 chimes.</span>
+            </figcaption>
+          </figure>
+          <figure class="screen-item">
+            <div class="device-frame"><img src="/media/planner-light.jpg" alt="Meal Planner and collapsible Grocery Gaps checklist" width="600" height="1304" loading="lazy"></div>
+            <figcaption>
+              <strong>Planner &amp; Grocery Gaps</strong>
+              <span>Daily and 7-day menus paired with collapsible aisle shopping lists.</span>
+            </figcaption>
+          </figure>
+          <figure class="screen-item">
+            <div class="device-frame"><img src="/media/insights-dark.jpg" alt="Coach Insights micronutrient bars and weekly trends" width="600" height="1304" loading="lazy"></div>
+            <figcaption>
+              <strong>Insights &amp; Micronutrients</strong>
+              <span>Track Fiber, Iron, Potassium, Vitamin C, and post-meal energy check-ins.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans-section" id="plans" aria-labelledby="plans-title">
+      <div class="shell">
+        <div class="section-header centered">
+          <p class="eyebrow">TRANSPARENT ACCESS</p>
+          <h2 id="plans-title">Food lookup stays free. <span class="headline-accent">Upgrade for deep coaching.</span></h2>
+          <p>Start logging immediately with zero paywall on text search or barcode scans. Unlock EvenPlate Pro when you want multi-photo fridge studios, 7-day plans, and weekly Coach digests.</p>
+        </div>
+
+        <div class="plans-grid">
+          <article class="plan-card">
+            <div class="plan-tier">FREE FOREVER</div>
+            <h3>Daily Core</h3>
+            <p class="plan-desc">Everything needed to log meals and check nutrition freely.</p>
+            <ul>
+              <li>Unlimited text &amp; barcode food lookup</li>
+              <li>3 AI camera plate scans each week</li>
+              <li>1-photo Kitchen Fridge Studio</li>
+              <li>1-day Meal Planner &amp; meal diary</li>
+              <li>30-day encrypted meal history</li>
+            </ul>
+          </article>
+
+          <article class="plan-card plan-pro">
+            <div class="plan-tier">EVENPLATE PRO</div>
+            <h3>Full Kitchen &amp; Coach Studio</h3>
+            <p class="plan-desc">Built for weekly planning, custom fridge prompts, and deep analytics.</p>
+            <ul>
+              <li>75 AI camera plate scans each week</li>
+              <li>Up to 4-photo Fridge &amp; Pantry Studio + custom recipe prompts</li>
+              <li>5 to 7 day Weekly Meal Planner with Grocery Gaps checklist</li>
+              <li>Pro Coach Weekly Digest &amp; Steady-vs-Dip pattern insights</li>
+              <li>Full macro, calorie, and micronutrient breakdown toggles</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-section" aria-labelledby="trust-title">
+      <div class="shell trust-card">
+        <div class="trust-marks">
+          <img class="brand-img-dark" src="/media/evenplate-mark-dark.png" alt="EvenPlate Dark emblem" width="96" height="96" loading="lazy">
+          <img class="brand-img-light" src="/media/evenplate-mark-light.png" alt="EvenPlate Light emblem" width="96" height="96" loading="lazy">
+        </div>
+        <div>
+          <p class="eyebrow">THE EVENPLATE PRINCIPLE</p>
+          <h2 id="trust-title">Calm numbers, encrypted privacy, zero guilt.</h2>
+          <p>EvenPlate provides educational nutrition and satiety estimates, not medical advice. Meal preferences stay AES-256 encrypted on device, stored plate photos remain ciphertext, EXIF location metadata is stripped at capture, and notifications activate only when you opt in.</p>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="shell footer-main"><div><a class="brand" href="/"><img src="/media/evenplate-mark.png" alt="" width="38" height="38"><span>EvenPlate<span class="brand-dot">.</span></span></a><p>Build a more filling plate.<br>No calorie counting.</p></div><nav aria-label="Footer navigation"><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a><a href="/support/">Support</a><a href="mailto:evenplatesupport@gmail.com">Email us</a></nav></div><div class="shell footer-bottom"><span>&copy; 2026 EvenPlate</span><span>Made for more mindful meals.</span></div></footer>
+
+  <footer class="site-footer">
+    <div class="shell footer-main">
+      <div>
+        <a class="brand" href="/">
+          <span class="brand-emblem" aria-hidden="true">
+            <img class="brand-img-dark" src="/media/evenplate-mark-dark.png" alt="" width="36" height="36">
+            <img class="brand-img-light" src="/media/evenplate-mark-light.png" alt="" width="36" height="36">
+          </span>
+          <span class="brand-word">Even<span class="brand-accent">Plate</span></span>
+        </a>
+        <p class="footer-tagline">Clarity on every plate, day or night.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Use</a>
+        <a href="/support/">Support</a>
+        <a href="mailto:evenplatesupport@gmail.com">evenplatesupport@gmail.com</a>
+      </nav>
+    </div>
+    <div class="shell footer-bottom">
+      <span>&copy; 2026 EvenPlate</span>
+      <span>Built for steady, mindful nutrition.</span>
+    </div>
+  </footer>
 </body>
 </html>
